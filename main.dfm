@@ -108,7 +108,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 1
       Value = 0
@@ -120,7 +120,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 2
       Value = 0
@@ -132,7 +132,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 3
       Value = 0
@@ -156,7 +156,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 5
       Value = 0
@@ -168,7 +168,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 6
       Value = 0
@@ -180,7 +180,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 7
       Value = 0
@@ -204,7 +204,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 9
       Value = 0
@@ -216,7 +216,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 10
       Value = 0
@@ -228,7 +228,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 11
       Value = 0
@@ -252,7 +252,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 13
       Value = 0
@@ -264,7 +264,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 14
       Value = 0
@@ -276,7 +276,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 15
       Value = 0
@@ -300,7 +300,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 17
       Value = 0
@@ -312,7 +312,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 18
       Value = 0
@@ -324,7 +324,7 @@ object MainForm: TMainForm
       Width = 49
       Height = 22
       Enabled = False
-      MaxValue = 255
+      MaxValue = 127
       MinValue = 0
       TabOrder = 19
       Value = 0
