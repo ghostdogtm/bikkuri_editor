@@ -29,12 +29,14 @@ object MainForm: TMainForm
       Width = 26
       Height = 31
       AutoSize = True
+      Transparent = True
     end
     object TeamMemberImg1: TImage
       Left = 8
       Top = 24
       Width = 26
       Height = 31
+      Transparent = True
     end
     object TeamMemberImg3: TImage
       Left = 8
@@ -42,6 +44,7 @@ object MainForm: TMainForm
       Width = 26
       Height = 31
       AutoSize = True
+      Transparent = True
     end
     object TeamMemberImg4: TImage
       Left = 8
@@ -49,6 +52,7 @@ object MainForm: TMainForm
       Width = 26
       Height = 31
       AutoSize = True
+      Transparent = True
     end
     object TeamMemberImg5: TImage
       Left = 8
@@ -56,6 +60,7 @@ object MainForm: TMainForm
       Width = 26
       Height = 31
       AutoSize = True
+      Transparent = True
     end
     object HPLabel: TLabel
       Left = 40
