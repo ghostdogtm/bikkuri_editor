@@ -100,6 +100,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 0
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit2: TSpinEdit
       Left = 96
@@ -111,6 +112,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 1
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit3: TSpinEdit
       Left = 152
@@ -122,6 +124,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 2
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit4: TSpinEdit
       Left = 208
@@ -133,6 +136,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 3
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit5: TSpinEdit
       Left = 40
@@ -144,6 +148,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 4
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit6: TSpinEdit
       Left = 96
@@ -155,6 +160,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 5
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit7: TSpinEdit
       Left = 152
@@ -166,6 +172,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 6
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit8: TSpinEdit
       Left = 208
@@ -177,6 +184,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 7
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit9: TSpinEdit
       Left = 40
@@ -188,6 +196,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 8
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit10: TSpinEdit
       Left = 96
@@ -199,6 +208,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 9
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit11: TSpinEdit
       Left = 152
@@ -210,6 +220,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 10
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit12: TSpinEdit
       Left = 208
@@ -221,6 +232,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 11
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit13: TSpinEdit
       Left = 40
@@ -232,6 +244,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 12
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit14: TSpinEdit
       Left = 96
@@ -243,6 +256,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 13
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit15: TSpinEdit
       Left = 152
@@ -254,6 +268,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 14
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit16: TSpinEdit
       Left = 208
@@ -265,6 +280,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 15
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit17: TSpinEdit
       Left = 40
@@ -276,6 +292,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 16
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit18: TSpinEdit
       Left = 96
@@ -287,6 +304,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 17
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit19: TSpinEdit
       Left = 152
@@ -298,6 +316,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 18
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
     object CharacteristicsEdit20: TSpinEdit
       Left = 208
@@ -309,6 +328,7 @@ object MainForm: TMainForm
       MinValue = 0
       TabOrder = 19
       Value = 0
+      OnChange = CharacteristicsEdit1Change
     end
   end
   object ActionsGroupBox: TGroupBox

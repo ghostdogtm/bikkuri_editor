@@ -47,6 +47,7 @@ type
     procedure SaveCurrentButtonClick(Sender: TObject);
     procedure TeamSelectSelect(Sender: TObject);
     procedure LoadRomButtonClick(Sender: TObject);
+    procedure CharacteristicsEdit1Change(Sender: TObject);
   private
     { Private declarations }
   public
@@ -58,27 +59,21 @@ var
   MyComponent, mc: TComponent;
   f: File of Byte;
   CharacteristicsArray: array[0..19] of byte;
-  i: ShortInt;
+  team_stats_array: array[0..4] of array[0..19] of Byte;
   rom_file_path: string;
 const
   team: array[0..4] of String = ('$1ac85', '$1ac99', '$1acad', '$1acc1', '$1acd5');
 implementation
 
-procedure LoadCharacteristics();
+procedure SetStats();
 var
   img_path, work_directory: string;
+  i: ShortInt;
 begin
-  Assignfile(f, rom_file_path);
-  FileMode:=fmOpenRead;
-  Reset(f);
-  Seek(f, StrToInt(team[MainForm.TeamSelect.ItemIndex]));
-  BlockRead(f, CharacteristicsArray, 20);
-  CloseFile(f);
-
   for i:=1 to 20 do
   begin
     MyComponent:=MainForm.FindComponent('CharacteristicsEdit'+IntToStr(i));
-    TSpinEdit(MyComponent).text:=IntToStr(CharacteristicsArray[i-1]);
+    TSpinEdit(MyComponent).Value:=team_stats_array[MainForm.TeamSelect.ItemIndex][i-1];
   end;
 
   work_directory:=extractfilepath(paramstr(0)) + 'img\';
@@ -90,6 +85,20 @@ begin
   end;
 end;
 
+procedure LoadCharacteristics();
+var
+  i: ShortInt;
+begin
+  Assignfile(f, rom_file_path);
+  FileMode:=fmOpenRead;
+  Reset(f);
+  Seek(f, StrToInt(team[MainForm.TeamSelect.ItemIndex]));
+  for i:=0 to 4 do
+    BlockRead(f, team_stats_array[i], 20);
+
+  CloseFile(f);
+end;
+
 {$R *.dfm}
 
 procedure TMainForm.SaveCurrentButtonClick(Sender: TObject);
@@ -97,24 +106,19 @@ begin
   Assignfile(f, rom_file_path);
   FileMode:=fmOpenWrite;
   Reset(f);
-  Seek(f, StrToInt(team[MainForm.TeamSelect.ItemIndex]));
-
-  for i:=1 to 20 do
-  begin
-    MyComponent:=FindComponent('CharacteristicsEdit'+IntToStr(i));
-    CharacteristicsArray[i-1]:=StrToInt(TSpinEdit(MyComponent).Text);
-  end;
-
-  BlockWrite(f, CharacteristicsArray, 20);
+  Seek(f, StrToInt(team[TeamSelect.ItemIndex]));
+  BlockWrite(f, team_stats_array[TeamSelect.ItemIndex], 20);
   CloseFile(f);
 end;
 
 procedure TMainForm.TeamSelectSelect(Sender: TObject);
 begin
-  LoadCharacteristics();
+  SetStats();
 end;
 
 procedure TMainForm.LoadRomButtonClick(Sender: TObject);
+var
+  i: ShortInt;
 begin
   if OpenRom.Execute then
     begin
@@ -127,7 +131,14 @@ begin
         TSpinEdit(MyComponent).Enabled:=True;
       end;
       LoadCharacteristics();
+      SetStats();
     end
+end;
+
+procedure TMainForm.CharacteristicsEdit1Change(Sender: TObject);
+begin
+  if (Sender as TSpinEdit).Text <> '' then
+    team_stats_array[TeamSelect.ItemIndex][(Sender as TSpinEdit).TabOrder]:=(Sender as TSpinEdit).Value;
 end;
 
 end.
